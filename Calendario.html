@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Calendario laboral Málaga 2025</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --bg:#ffffff; --ink:#1f2937;
+    --wknd:#ffe7c6; --holiday:#d6e8ff; --special:#ead8ff;
+    --grid:#e5e7eb; --accent:#111827;
+    --title:#0f172a; --month:#111827;
+  }
+  @media (prefers-color-scheme: light){
+    body{background:var(--bg); color:var(--ink);}
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:24px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  .page{
+    max-width: 1400px; margin:0 auto;
+  }
+  h1{
+    margin:0 0 12px 0; font-weight:800; letter-spacing:.2px;
+    color:var(--title); font-size:28px;
+  }
+  .legend{
+    display:flex; gap:16px; flex-wrap:wrap; margin-bottom:16px; font-size:14px;
+  }
+  .chip{display:inline-flex; align-items:center; gap:8px}
+  .dot{width:14px; height:14px; border-radius:3px; display:inline-block; border:1px solid #0001}
+  .dot.wknd{background:var(--wknd)}
+  .dot.holiday{background:var(--holiday)}
+  .dot.special{background:var(--special)}
+  .grid{
+    display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;
+  }
+  @media (max-width:1200px){ .grid{grid-template-columns: repeat(2, 1fr);} }
+  @media (max-width:800px){ .grid{grid-template-columns: 1fr;} }
+  .month{
+    border:1px solid var(--grid); border-radius:10px; padding:10px 10px 12px;
+  }
+  .caption{
+    font-weight:700; color:var(--month); margin:4px 4px 8px; font-size:16px;
+  }
+  table{
+    width:100%; border-collapse:separate; border-spacing:0; table-layout:fixed;
+    font-variant-numeric: tabular-nums;
+  }
+  thead th{
+    font-size:12px; font-weight:700; color:#475569; padding:6px 0;
+    border-bottom:1px solid var(--grid);
+  }
+  tbody td{
+    height:36px; text-align:center; vertical-align:middle; font-size:14px;
+    border-bottom:1px solid #f3f4f6; border-right:1px solid #f3f4f6;
+    position:relative;
+  }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody td:last-child{ border-right:none; }
+  /* Sábado y domingo por columnas 6 y 7 */
+  tbody td:nth-child(6), tbody td:nth-child(7){ background:var(--wknd); }
+  /* Vacíos */
+  td.empty{background:transparent}
+  /* Festivos y especiales */
+  td.holiday{ background:var(--holiday) !important; }
+  td.special{ background:var(--special) !important; }
+  /* Estética del número */
+  td > span{
+    position:relative; z-index:1; color:var(--accent);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Calendario laboral Málaga 2025</h1>
+  <div class="legend">
+    <span class="chip"><span class="dot wknd"></span>Fines de semana</span>
+    <span class="chip"><span class="dot holiday"></span>14 festivos (Málaga)</span>
+    <span class="chip"><span class="dot special"></span>Fechas especiales: 10 mar, 17 oct</span>
+  </div>
+
+  <div class="grid">
+    <!-- ENERO -->
+    <section class="month">
+      <div class="caption">Enero 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td class="holiday"><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td></tr>
+          <tr><td class="holiday"><span>6</span></td><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td></tr>
+          <tr><td><span>13</span></td><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td></tr>
+          <tr><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td></tr>
+          <tr><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td><td><span>31</span></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FEBRERO -->
+    <section class="month">
+      <div class="caption">Febrero 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td><span>1</span></td><td><span>2</span></td></tr>
+          <tr><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td></tr>
+          <tr><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td></tr>
+          <tr><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td><td class="holiday"><span>21</span></td><td><span>22</span></td><td><span>23</span></td></tr>
+          <tr><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td class="holiday"><span>28</span></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- MARZO -->
+    <section class="month">
+      <div class="caption">Marzo 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td><span>1</span></td><td><span>2</span></td></tr>
+          <tr><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td></tr>
+          <tr><td class="special"><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td></tr>
+          <tr><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td></tr>
+          <tr><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td></tr>
+          <tr><td><span>31</span></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ABRIL -->
+    <section class="month">
+      <div class="caption">Abril 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td></tr>
+          <tr><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td></tr>
+          <tr><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td><td class="holiday"><span>17</span></td><td class="holiday"><span>18</span></td><td><span>19</span></td><td><span>20</span></td></tr>
+          <tr><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td></tr>
+          <tr><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- MAYO -->
+    <section class="month">
+      <div class="caption">Mayo 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="holiday"><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td></tr>
+          <tr><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td></tr>
+          <tr><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td></tr>
+          <tr><td><span>19</span></td><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td></tr>
+          <tr><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td><td><span>31</span></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- JUNIO -->
+    <section class="month">
+      <div class="caption">Junio 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td><span>1</span></td></tr>
+          <tr><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td></tr>
+          <tr><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td><td><span>15</span></td></tr>
+          <tr><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td></tr>
+          <tr><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td></tr>
+          <tr><td><span>30</span></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- JULIO -->
+    <section class="month">
+      <div class="caption">Julio 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td></tr>
+          <tr><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td></tr>
+          <tr><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td></tr>
+          <tr><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td></tr>
+          <tr><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td><td><span>31</span></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- AGOSTO -->
+    <section class="month">
+      <div class="caption">Agosto 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td></tr>
+          <tr><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td></tr>
+          <tr><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td><td class="holiday"><span>15</span></td><td><span>16</span></td><td><span>17</span></td></tr>
+          <tr><td><span>18</span></td><td class="holiday"><span>19</span></td><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td></tr>
+          <tr><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td><td><span>31</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SEPTIEMBRE -->
+    <section class="month">
+      <div class="caption">Septiembre 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td></tr>
+          <tr><td class="holiday"><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td></tr>
+          <tr><td><span>15</span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td><td><span>21</span></td></tr>
+          <tr><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td></tr>
+          <tr><td><span>29</span></td><td><span>30</span></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- OCTUBRE -->
+    <section class="month">
+      <div class="caption">Octubre 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td></tr>
+          <tr><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td></tr>
+          <tr><td class="holiday"><span>13</span></td><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td><td class="special"><span>17</span></td><td><span>18</span></td><td><span>19</span></td></tr>
+          <tr><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td></tr>
+          <tr><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td><td><span>31</span></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- NOVIEMBRE -->
+    <section class="month">
+      <div class="caption">Noviembre 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="holiday"><span>1</span></td><td><span>2</span></td></tr>
+          <tr><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td><td><span>8</span></td><td><span>9</span></td></tr>
+          <tr><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td><td><span>15</span></td><td><span>16</span></td></tr>
+          <tr><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td><td><span>21</span></td><td><span>22</span></td><td><span>23</span></td></tr>
+          <tr><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td><td><span>29</span></td><td><span>30</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- DICIEMBRE -->
+    <section class="month">
+      <div class="caption">Diciembre 2025</div>
+      <table>
+        <thead><tr><th>L</th><th>M</th><th>X</th><th>J</th><th>V</th><th>S</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td class="holiday"><span>6</span></td><td><span>7</span></td></tr>
+          <tr><td class="holiday"><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td></tr>
+          <tr><td><span>15</span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td><td><span>20</span></td><td><span>21</span></td></tr>
+          <tr><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td class="holiday"><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td></tr>
+          <tr><td><span>29</span></td><td><span>30</span></td><td><span>31</span></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <p style="margin-top:10px; color:#64748b; font-size:12px">
+    Nota: festivos marcados según calendario laboral habitual en Málaga (2025). Si tu empresa añade otros, dímelos y los pinto.
+  </p>
+</div>
+</body>
+</html>
